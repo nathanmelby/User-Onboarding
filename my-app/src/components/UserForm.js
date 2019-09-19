@@ -77,7 +77,7 @@ const FormikUserForm = withFormik({
         name: Yup.string().required("You must enter a name"),
         email: Yup.string().required("You must enter an Email"),
         password: Yup.string().min(9, "Password must be 9 characters long").required(),
-        termsofservice: Yup.boolean().oneOf([true], "you Must agree to our Terms and Services to continue")
+        // termsofservice: Yup.boolean().oneOf([true], "you Must agree to our Terms and Services to continue")
     }),
 
 handleSubmit(values, { setStatus }) {
